@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Bootstrap Links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -12,6 +12,7 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">
             <img class="rounded-circle" src="pictures/myPost.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -25,6 +26,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">About</a>
                 </li>
+                <!-- Moved active class to Portfolio -->
                 <li class="nav-item active">
                     <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
                 </li>
@@ -34,12 +36,17 @@
             </ul>
         </div>
     </nav>
+    <!-- Main Page -->
     <main class="container">
+      <!-- Single row for heading -->
       <div class="row">
         <h1 class="display-4 mx-auto" style="text-align: center; margin-top: 30px;">Portfolio</h1>
       </div>
       <hr>
+      <!-- First of two row, includes three cards -->
       <div class="row">
+        <!-- Three columns for large browsers, single column for mobile browser -->
+        <!-- First card -->
         <div class="col-md-4 col-sm-12" style="margin-top: 20px;">
           <div class="card" style="width: 100%;">
             <img
@@ -58,6 +65,7 @@
             </div>
           </div>
         </div>
+        <!-- Second Card -->
         <div class="col-md-4 col-sm-12" style="margin-top: 20px;">
           <div class="card" style="width: 100%;">
             <img
@@ -76,6 +84,7 @@
             </div>
           </div>
         </div>
+        <!-- Third Card -->
         <div class="col-md-4 col-sm-12" style="margin-top: 20px;">
           <div class="card" style="width: 100%;">
             <img
@@ -95,7 +104,9 @@
           </div>
         </div>
       </div>
+      <!-- Second of two rows, includes three cards -->
       <div class="row">
+        <!-- Fourth Card -->
         <div class="col-md-4 col-sm-12" style="margin-top: 20px;">
           <div class="card" style="width: 100%;">
             <img
@@ -114,6 +125,7 @@
             </div>
           </div>
         </div>
+        <!-- Fifth card -->
         <div class="col-md-4 col-sm-12" style="margin-top: 20px;">
           <div class="card" style="width: 100%;">
             <img
@@ -132,26 +144,12 @@
             </div>
           </div>
         </div>
+        <!-- Sixth Empty Card -->
         <div class="col-md-4 col-sm-12" style="margin-top: 20px;">
-          <div class="card" style="width: 100%;">
-            <img
-              src="https://lh3.googleusercontent.com/81nem6fPgDEJPB_LWyFTzuKbY1AZnsO_G_7qVOjrw3YHko7dIqvFtf1GHQicBR5cbhs=w412-h220-rw"
-              class="card-img-top"
-              alt="Chess"
-            />
-            <div class="card-body">
-              <h5 class="card-title">A Chess Game</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                In placerat erat quis porta molestie. Suspendisse ante
-                mauris, ullamcorper ac consequat.
-              </p>
-              <a href="portfolio.html" class="btn btn-primary">Check it out!</a>
-            </div>
-          </div>
         </div>
       </div>
     </main>
+    <!-- Footer -->
     <footer style="margin-top: 100px;" class="container">
         <p class="float-right"><a href="#">Back to the top</a></p>
         <p> &#169Coding "Hello, world" since 2020</p>
